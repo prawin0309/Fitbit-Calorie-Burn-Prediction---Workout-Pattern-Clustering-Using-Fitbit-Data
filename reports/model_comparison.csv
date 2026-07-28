@@ -1,0 +1,9 @@
+model,MAE,RMSE,R2,CV_R2_mean,CV_R2_std,meets_target
+XGBoost,3.642,5.548,0.999,0.9988,0.0002,True
+Random Forest,3.674,7.855,0.998,0.9977,0.0008,True
+SVR (RBF),3.611,9.744,0.997,0.9972,0.0008,True
+Decision Tree,11.399,17.412,0.9903,0.9902,0.0008,True
+KNN Regressor,30.084,43.559,0.9396,0.9397,0.002,True
+Lasso Regression,34.622,52.768,0.9113,0.9113,0.0046,True
+Linear Regression,34.62,52.767,0.9113,0.9113,0.0046,True
+Ridge Regression,34.621,52.77,0.9113,0.9113,0.0046,True

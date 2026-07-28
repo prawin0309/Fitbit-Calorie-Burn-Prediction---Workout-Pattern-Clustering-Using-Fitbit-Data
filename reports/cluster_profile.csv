@@ -1,0 +1,5 @@
+cluster,sessions,avg_bpm,resting_bpm,duration_h,calories,bmi,fat_pct,frequency,kcal_per_hour,segment
+0,3200,155.51,64.24,1.05,359.19,23.33,17.7,5.5,342.1,High intensity | lean cohort | 342 kcal/h
+1,3957,140.81,73.26,0.65,200.65,23.29,25.35,3.06,308.7,Light intensity | lean cohort | 309 kcal/h
+2,3867,158.02,73.77,0.65,246.72,24.99,25.2,3.01,379.6,Peak intensity | lean cohort | 380 kcal/h
+3,3078,136.64,64.01,1.06,339.17,24.79,17.44,5.59,320.0,Moderate intensity | lean cohort | 320 kcal/h
