@@ -1,0 +1,3 @@
+model,setting,MAE,RMSE,R2
+XGBoost,default,3.642,5.548,0.999
+XGBoost,tuned,2.795,4.878,0.9992
