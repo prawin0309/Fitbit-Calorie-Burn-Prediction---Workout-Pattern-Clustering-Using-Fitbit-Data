@@ -147,8 +147,8 @@ Two further normalisations happen in `normalise_columns()`:
 
 ```bash
 # 1. Clone and enter the project
-git clone https://github.com/<your-username>/Fitbit_Calorie_Burn_Prediction.git
-cd Fitbit_Calorie_Burn_Prediction
+git clone https://github.com/prawin0309/Fitbit-Calorie-Burn-Prediction---Workout-Pattern-Clustering-Using-Fitbit-Data.git
+cd Fitbit-Calorie-Burn-Prediction---Workout-Pattern-Clustering-Using-Fitbit-Data
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
