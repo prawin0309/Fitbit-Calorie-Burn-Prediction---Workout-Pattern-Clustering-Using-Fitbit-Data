@@ -136,6 +136,43 @@ Two further normalisations happen in `normalise_columns()`:
 
 ---
 
+## Project Metadata
+
+| Field | Detail |
+|---|---|
+| **Domain** | Health, Fitness and Wearable Device Analytics |
+| **Skills demonstrated** | Python · Pandas · NumPy · outlier treatment (Tukey fences) · one-hot encoding · feature scaling · comparison of eight regressors · RandomizedSearchCV tuning · PCA · KMeans · SQL · Streamlit · Plotly |
+| **Technical tags** | `python` `streamlit` `xgboost` `scikit-learn` `regression` `clustering` `pca` `fitness` `mysql` `plotly` |
+| **Dataset** | `data/fitbit_workouts.csv` — 14,102 workout sessions with 15 columns, supplied with the project brief. `Calories_Burned (kcal)` is the regression target. |
+
+### Business Use Cases
+
+* Give a user a calorie estimate for a planned session before they train.
+* Group users into workout-behaviour cohorts to personalise coaching plans.
+* Identify which physiological and session features actually drive calorie burn.
+* Benchmark an individual session against the cohort it most resembles.
+
+### Project Evaluation Metrics
+
+| Component | Metric | Achieved |
+|---|---|---|
+| Calorie regression (XGBoost) | R² (target ≥ 0.80) | 0.9990 |
+| Calorie regression (XGBoost) | MAE / RMSE | 3.64 kcal / 5.55 kcal |
+| Calorie regression (XGBoost) | 5-fold cross-validated R² | 0.9988 ± 0.0002 |
+| Workout clustering (PCA + KMeans) | Silhouette (target ≥ 0.15) | 0.2515 at k=4 |
+| Workout clustering | PCA variance explained | 62.4% across 3 components |
+
+### Project Deliverables
+
+* `data_pipeline.py` — cleaning, outlier capping, encoding, scaling and SQL load
+* `models.py` — eight-model regression leaderboard and PCA + KMeans clustering
+* `tune.py` — RandomizedSearchCV tuning with a tuned-vs-default comparison
+* `app.py` — six-page Streamlit application including a live calorie predictor
+* `artifacts/*.pkl` — encoder, scaler, best regressor, PCA and KMeans models
+* `reports/model_comparison.csv` and `reports/cluster_profile.csv`
+
+---
+
 ## 2. How to Execute the Project
 
 ### Prerequisites
@@ -357,3 +394,21 @@ smaller even though average accuracy barely moves. Full results in
 
 
 <!-- TUNING:END -->
+
+---
+
+## Author
+
+**Prawin**
+GitHub: [@prawin0309](https://github.com/prawin0309) · Email: prawin0309@gmail.com
+
+## Demo Video
+
+A recorded walkthrough of the running application is required for submission.
+Add the link here once the recording is uploaded:
+
+`Demo video: <paste LinkedIn / Google Drive link here>`
+
+## License
+
+Released under the MIT License. See [LICENSE](LICENSE) for the full text.
